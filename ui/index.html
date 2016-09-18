@@ -1,17 +1,153 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang= "en">
     <head>
-        <link href="/ui/style.css" rel="stylesheet" />
+    <title>Ask Us</title>
+    <meta charset="utf-8">
+    <link href="group.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel="stylesheet" type="text/css">
+         <link rel="icon" href="favicon.jpg" type="image/x.icon">
+        <style>
+            nav {
+                opacity: 1;
+                height: 50px;
+                background-color: #4c4c4c;
+            }
+            nav li {
+                margin-top: -40px;
+            }
+            nav ul ul li {
+                background-color: #4c4c4c;
+                text-align: center;
+                margin-right: 22px;
+                margin-left: -15px;
+                
+            }
+            nav ul ul {
+                background-color: #4c4c4c;
+                position: absolute;
+    display: none;
+    padding: 20px;
+    padding-bottom: 0;
+    text-align: center;
+    margin-left: 22px;
+            }
+            
+            label {
+                display: block;
+                margin-top: 20px;
+            }
+            
+            input {
+                display: block;
+                margin-bottom: 20px;
+            }
+        </style>
+        <!--(IF LT IE 9)>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>
+<![endif]-->
     </head>
-    <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
+
+<body>
+<body>
+    <div class="container">
+    <header>
+    </header>
+
+  
+<nav>
+    <ul>
+        <li><a href="index.html"><h2>Home</h2></a></li>
+        <li><a href="askus.html"><h2>AskUs</h2></a></li>
+        <li><a href="resources.html"><h2>Resources&nbsp;&nbsp;&#65516;</h2></a>
+            <ul>
+                <li><a href="tutorials.html"><h3>Tutorials</h3></a></li>
+                <li><a href="reviews.html"><h3>Reviews</h3></a></li>
+            </ul>
+        </li>
+        <li><a href="map.html"><h2>Map</h2></a></li>
+    </ul>
+</nav>
+  
+    
+    <main>
+        <center>
+    <div id="form">
+        <H1>ASK US ANYTHING</H1>
+        <p style="font-style: italic"><h3>Fields marked with * are required</h3></p>
+        
+        <div id=formoverall align="center">
+    <div id="formleft">    
+    <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+        <label for="myname">*Your First Name</label>
+        <input type="text" name="myname" id="myname" required="required" placeholder="your name">
+        
+        <label for="mylastname">*Your Last Name</label>
+        <input type="text" name="mylastname" id="mylastname" placeholder="your last name">
+            
+        <label for="700number">Your 700#<br>(if applicable)</label>
+        <input type="text" name="700number" id="700number" placeholder="700|***|***">
+        
+        <label for="myemail">* E-mail</label>
+        <input type="email" name="myemail" id="myemail" required="required" placeholder="you@website.com">
+        
+        <label for="myphone">* Phone#</label>
+        <input type="phone" name="myphone" id="myphone" required="required" placeholder="555 555 5555">
+        </fieldset>
+        
+        <label for="myrating"><em>Rating of Class (1 &mdash; 10)</em></label>
+        <input type="range" name="myrating" id="myrating" min="1" max="10"><br>
         </div>
-        <br>
-        <div class="center text-big bold">
-            Hi! I am your webapp.
+        
+        <div id="formcenter">
+        <p><strong>Choose the browsers you use:</strong></p>
+        <input type="checkbox" name="IE" id="IE" value="yes" style="float: left; margin-top: 5px;"><div style="margin-left: 0px;">Internet Explorer</div><br>
+        <input type="checkbox" name="FF" id="FF" value="yes" style="float: left; margin-top: 5px;"><div style="margin-left: 0px;">FireFox</div><br>
+        <input type="checkbox" name="chrome" id="chrome" value="yes" style="float: left; margin-top: 5px;"><div style="margin-left: 0px;">Chrome</div><br>
+        <input type="checkbox" name="other" id="other" value="yes" style="float: left; margin-top: 5px;"><div style="margin-left: 0px;">Other</div><br>
+        
+        <p><b>Choose your favorite browser:</b></p>
+        <input type="radio" name="favbrowser" id="favIE" value="IE" style="float: left; margin-top: 5px;"><div style="margin-left: 0px;">Internet Explorer</div><br>
+        <input type="radio" name="favbrowser" id="favFF" value="FF" style="float: left; margin-top: 5px;"><div style="margin-left: 0px;">FireFox</div><br>
+        <input type="radio" name="favbrowser" id="favchrome" value="chrome" style="float: left; margin-top: 5px;"><div style="margin-left: 0px;">Chrome</div><br>
+        
+        <select size="1" name="major" id="major">
+        <option>Select your major</option>
+        <option value="Graphic Design">Graphic Design</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Communications">Communications</option>
+        <option value="Interior Design">Interior Design</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Other">Other</option>
+        </select>
         </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+        
+        <div id="formright">
+            <label for="myquestions"><i>* Questions</i></label>
+        <textarea name="myquestions" id="myquestions" rows="26" cols="50" required="required" placeholder="your questions here"></textarea>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+</form>
+        </div>
+        </div>
+            
+        <div id="contactinfo"><p><h4>Contact the Department:</h4></p><a href="mailto:lpeloquin@mc.edu">- Click Me -</a></div>
+        </div>
+        </center>
+
+     
+        <center>
+<div id="gray">   
+    </main>
+    <footer>
+        Copyright &copy; 2015 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; Mississippi College &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; All Rights Reserved
+    </footer>
+</div>
+        </center>
+    
+</body>
+</body>
+</div>
+
 </html>
